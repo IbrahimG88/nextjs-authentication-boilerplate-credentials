@@ -50,7 +50,10 @@ function AuthForm() {
 
       if (!result.error) {
         // set some auth state
-        router.push("/profile");
+        // head to your app from here
+        router.push("/your-app-here");
+      } else if (result.error) {
+        alert("Wrong email or password!");
       }
     } else {
       try {

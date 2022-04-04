@@ -59,8 +59,8 @@ export default NextAuth({
     // ...add more providers here
   ],
   pages: {
-    signIn: "/profile",
-    signOut: "/auth/signout",
+    signIn: "/",
+    // signOut: "/auth/signout",
   },
   // adapter: MongoDBAdapter(clientPromise),
 });

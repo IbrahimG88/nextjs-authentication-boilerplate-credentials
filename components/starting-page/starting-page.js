@@ -15,6 +15,7 @@ export default StartingPageContent;
 
 */
 import { useSession, signIn, signOut } from "next-auth/react";
+import AuthForm from "../auth/auth-form";
 
 export default function StartingPageContent() {
   const { data: session } = useSession();
@@ -30,6 +31,10 @@ export default function StartingPageContent() {
     <>
       Not signed in <br />
       <button onClick={() => signIn()}>Sign in</button>
+      <AuthForm />
     </>
   );
 }
+
+/*
+ */
