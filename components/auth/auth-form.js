@@ -60,9 +60,7 @@ function AuthForm() {
         const result = await createUser(enteredEmail, enteredPassword);
         console.log(result);
       } catch (error) {
-        alert(
-          "password has to be 7 characters long, email has to be in right format!"
-        );
+        alert(error);
         console.log(error);
       }
     }
